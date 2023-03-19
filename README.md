@@ -55,3 +55,13 @@ start python file
 ```
 $ pipenv run python main.py
 ```
+
+run prefect script
+```
+(workflow) $ python3 basic_flow.py 
+14:03:39.839 | INFO    | prefect.engine - Created flow run 'organic-bulldog' for flow 'my-favorite-function'
+What is your favorite number?
+14:03:39.904 | INFO    | Flow run 'organic-bulldog' - Finished in state Completed()
+42
+
+```
