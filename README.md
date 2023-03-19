@@ -25,3 +25,33 @@ Installing dependencies from Pipfile.lock (5f83a7)...
 To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
 ```
+
+enter venv
+```
+$ pipenv shell
+Launching subshell in virtual environment...
+...
+(workflow) $ exit
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...       4 completed.
+```
+
+start venv script
+```
+$ pipenv run start 
+Pipfile start command
+-----------------------------------
+Pipfile
+
+[scripts]
+start = "python main.py hello"
+-----------------------------------
+```
+
+start python file
+```
+$ pipenv run python main.py
+```
