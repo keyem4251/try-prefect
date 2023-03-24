@@ -1,7 +1,7 @@
 # try-prefect
 
-try prefect 
-use pipenv
+try prefect  
+use pipenv  
 ```
 $ brew install pipenv
 $ mkdir workflow
