@@ -10,7 +10,11 @@ def call_api(url):
     return response.json()
 
 
-@task
+@task(
+    name="My example Task",
+    description="An example task for a tutorial.",
+    tags=["tutorial", "tag-test"]
+)
 def parse_fact(response):
     fact = response("fact")
     print(fact)
