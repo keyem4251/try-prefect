@@ -1,4 +1,5 @@
 import requests
+import os
 from prefect import flow, task
 
 
@@ -16,7 +17,11 @@ def parse_fact(response):
     return fact
 
 
-@flow(name="My Example Flow", description="An example flow for a tutorial.")
+@flow(
+    name="My Example Flow",
+    description="An example flow for a tutorial.",
+    version=os.getenv("GIT_COMMIT_SHA")
+)
 def api_flow(url):
     fact_json = call_api(url)
     fact_text = parse_fact(fact_json)
