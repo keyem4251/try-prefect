@@ -1,6 +1,6 @@
 # try-prefect
 
-try prefect  
+try [prefect](https://www.prefect.io)
 use pipenv  
 ```
 $ brew install pipenv
